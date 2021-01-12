@@ -12,10 +12,16 @@ export default {
       type: "string",
     },
     {
+      name: "genre",
+      title: "Genre",
+      type: "string",
+      description: "e.g. Horror, Drama, Short Film",
+    },
+    {
       name: "slug",
       title: "Slug",
       description:
-        "The url of the film on our website. Best to generate automatically",
+        "The url of the film on our website. Best to just click 'Generate'!",
       type: "slug",
       options: {
         source: "title",
@@ -23,15 +29,24 @@ export default {
       },
     },
     {
-      name: "link",
+      name: "videoLink",
       type: "url",
-      title: "Link",
-      description: "Link to the film on youtube/vimeo",
+      title: "YouTube / Vimeo Link",
+      description:
+        "To get a clean link, click on the 'share' button on youtube and make sure that the 'Start at: ' option is turned off.",
+    },
+    {
+      name: "externalLink",
+      type: "url",
+      title: "External Page",
+      description: "Link to the project on IMDb or some other service",
     },
     {
       name: "description",
       title: "Description",
       type: "blockContent",
+      description:
+        "Short description of the project. Don't include credits as these have a separate field.",
     },
     {
       name: "releaseDate",
