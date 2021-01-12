@@ -2,7 +2,7 @@ import { MdLocalMovies as icon } from "react-icons/md";
 
 export default {
   name: "film",
-  title: "Film",
+  title: "Films",
   type: "document",
   icon,
   fields: [

@@ -2,7 +2,7 @@ import UserIcon from "part:@sanity/base/user-icon";
 
 export default {
   name: "person",
-  title: "Person",
+  title: "People",
   type: "document",
   icon: UserIcon,
   fields: [
@@ -52,6 +52,6 @@ export default {
     },
   ],
   preview: {
-    select: { title: "name", media: "image" },
+    select: { title: "name", subtitle: "role", media: "image" },
   },
 };
