@@ -13,11 +13,11 @@ export default {
       description: 'E.g.: Our first ever screening of Gattaca',
     },
     {
-      name: 'movie',
-      title: 'Movie',
+      name: 'film',
+      title: 'Film',
       type: 'reference',
-      to: [{type: 'movie'}],
-      description: 'Which movie are we screening',
+      to: [{type: 'film'}],
+      description: 'Which film are we screening',
     },
     {
       name: 'published',
@@ -73,7 +73,7 @@ export default {
   preview: {
     select: {
       title: 'title',
-      media: 'movie.poster',
+      media: 'film.poster',
     },
   },
 }
