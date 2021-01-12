@@ -23,6 +23,12 @@ export default {
       },
     },
     {
+      name: "link",
+      type: "url",
+      title: "Link",
+      description: "Link to the film on youtube/vimeo",
+    },
+    {
       name: "description",
       title: "Description",
       type: "blockContent",
