@@ -73,6 +73,7 @@ export default {
                   "spotify",
                   "linkedin",
                   "other website",
+                  "vimeo",
                 ],
               },
             },
