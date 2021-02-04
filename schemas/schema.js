@@ -11,6 +11,7 @@ import film from "./film";
 import person from "./person";
 import websiteContent from "./websiteContent";
 import contactInfo from "./contactInfo";
+import event from "./event";
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -25,6 +26,7 @@ export default createSchema({
     websiteContent,
     film,
     person,
+    event,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
