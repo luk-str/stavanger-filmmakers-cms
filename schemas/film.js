@@ -36,12 +36,6 @@ export default {
         "To get a clean link, click on the 'share' button on youtube and make sure that the 'Start at: ' option is turned off.",
     },
     {
-      name: "externalLink",
-      type: "url",
-      title: "External Page",
-      description: "Link to the project on IMDb or some other service",
-    },
-    {
       name: "description",
       title: "Description",
       type: "blockContent",
@@ -60,6 +54,42 @@ export default {
       options: {
         hotspot: true,
       },
+    },
+    {
+      name: "links",
+      title: "Links",
+      type: "array",
+      description: "Links to the film's other websites on the internet",
+      of: [
+        {
+          name: "link",
+          title: "Link",
+          type: "object",
+          fields: [
+            {
+              name: "websiteName",
+              title: "Website Name",
+              type: "string",
+              options: {
+                list: [
+                  "imdb",
+                  "youtube",
+                  "vimeo",
+                  "facebook",
+                  "twitter",
+                  "instagram",
+                  "other website",
+                ],
+              },
+            },
+            {
+              name: "url",
+              title: "url",
+              type: "url",
+            },
+          ],
+        },
+      ],
     },
     {
       name: "castMembers",
